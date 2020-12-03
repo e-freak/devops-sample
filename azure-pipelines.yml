@@ -5,11 +5,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- script: ls
-  displayName: 'View files'
-
-- script: ./sample-script.sh
-  displayName: 'kick scriptA'
-
-- bash: ./sample-script.sh
-  displayName: 'kick scriptB'
+- script:
+    chmod 755 sample-script.sh
+    ./sample-script.sh
+  displayName: 'kick script'

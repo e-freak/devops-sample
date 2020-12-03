@@ -7,5 +7,5 @@ pool:
 steps:
 - script:
     chmod 755 sample-script.sh
-    ./sample-script.sh
+    echo `./sample-script.sh`
   displayName: 'kick script'
